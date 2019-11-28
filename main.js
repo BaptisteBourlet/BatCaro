@@ -54,7 +54,7 @@ fiestaGageList.push(Object.values(fiestaGage));
         
 
         $('#trustBtn').click(function(){
-
+            
         });
     });
 })(jQuery);
