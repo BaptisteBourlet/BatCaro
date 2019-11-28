@@ -1,0 +1,36 @@
+//test
+$pink: #c6538c;
+body{
+    
+}
+//section home
+.home{
+    height: 100vh;
+}
+//les boutons de selection du mod
+.caroButtonMod{
+        font-size: 18px;
+        width: 300px;
+        height: 100px;
+        background: url(pancarte.png) no-repeat;
+        border: none;
+        font-family: 'Oldenburg', cursive;
+}
+//systeme de mise en place
+.wrapper{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+#fiestaMod{
+    grid-column: 2 / 4;
+    grid-row: 3;
+}
+#hotMod{
+    grid-column: 3 / 3;
+    grid-row: 3;  
+}
+//section game
+.game{
+    height: 100vh;
+}
