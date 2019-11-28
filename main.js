@@ -7,10 +7,9 @@
             var name = $('#enterPlayer').val();
             nameList.push(name)
             $('#enterPlayer').val('');
-            $('.playerList').append("<p>" + name + "</p>");
+            $('.playerList').append("<p class='nameListe'>" + name + "</p>");
             e.preventDefault();
         });
-
 
     });
 })(jQuery);
