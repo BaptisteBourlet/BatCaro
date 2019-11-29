@@ -1,34 +1,76 @@
 //test
 $pink: #c6538c;
 body{
-    
+
 }
 //section home
 .home{
     height: 100vh;
+    background-image: url(taverne.png);
+    background-size: cover;  
 }
 //les boutons de selection du mod
 .caroButtonMod{
-        font-size: 18px;
-        width: 300px;
-        height: 100px;
-        background: url(pancarte.png) no-repeat;
+        font-size: 40px;
+        width: 500px;
+        height: 170px;
+        background: url(pancarte.png);
+        background-size: contain;
+        // border: 8px dashed rgb(121, 0, 177);
         border: none;
         font-family: 'Oldenburg', cursive;
+        &:hover{
+            filter: contrast(2.5);
+        }
 }
-//systeme de mise en place
-.wrapper{
+//systeme de mise en place pour choix de difficulté
+.wrapperModChoice{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    justify-items: center;
 }
 #fiestaMod{
-    grid-column: 2 / 4;
+    grid-column: 2;
     grid-row: 3;
+    color: rgb(119, 48, 0);
+    
 }
 #hotMod{
-    grid-column: 3 / 3;
-    grid-row: 3;  
+    grid-column: 4;
+    grid-row: 3;
+    color: rgb(119, 48, 0); 
+}
+//systeme de grid pour entrer nom joueur
+.wrapperPlayers{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    justify-items: center;
+}
+#formPlayerName{
+    grid-column: 2;
+    grid-row: 2;
+}
+#enterPlayer{
+    height: 100px;
+    width: 500px;
+    background-color: rgb(27, 27, 27);
+}
+::placeholder{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+#submit{
+    font-size: 40px;
+    width: 500px;
+    height: 170px;
+    background: url(pancarte.png);
+    background-size: contain;
+    // border: 8px dashed rgb(121, 0, 177);
+    border: none;
+    font-family: 'Oldenburg', cursive;
 }
 //section game
 .game{
