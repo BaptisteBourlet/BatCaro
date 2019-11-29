@@ -21,7 +21,7 @@ const fiestaQuestions = {
 }
 
 const fiestaGage = {
-    g1 : "goodbye",
+    g1 : "bois",
     g2 : "aurevoir",
     g3 : "badaboom"
 }
