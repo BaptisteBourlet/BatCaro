@@ -1,27 +1,26 @@
-
-
 {
     "hotQuestions": [
-    "Nini, bois un coup mon pote !",
-    "hello",
-    "francis",
-    "yoooooo"
+        "Ta pire expérience sexuel ?",
+        "Qui dans la pièce te plaît ( physiquement ou intellectuellemnt ) => à toi de choisir",
+        "dis bonjour Sabine"
     ],
-    "hotGage":[
-    "Tu peux boire un coup Bébé Auré !",
-    "prie",
-    "a poil"
+    "hotGage": [
+        "échange un vêtement avec la personne de ton choix !",
+        "fais un baiser sur la joue de Batou",
+        "bois 2 gorgées !",
+        "enlèves un vêtement à la personne à ta droite",
+        "fais un show sexyyy à la personne à ta gauche",
+        "un ptit baiser sensuel à X",
+        "un massage à la personne en face de toi jusqu'à ton prochain tour"
     ],
-
-
-    "fiestaQuestions" : [
+    "fiestaQuestions": [
         "Nini, bois un coup mon pote !",
         "oui",
         "yeaaah"
     ],
-    "fiestaGage" : [
+    "fiestaGage": [
         "Tu peux boire un coup Bébé Auré !",
         "aurevoir",
         "badaboom"
     ]
-  }
+}
