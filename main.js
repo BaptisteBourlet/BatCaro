@@ -70,8 +70,8 @@ function getRandomInt(max) {
 
         $("#submit").click(function (e) {
             var name = $('#enterPlayer').val();
-            nameList.push(name);
-            $('#enterPlayer').val('');
+            if (name.length>0)nameList.push(name);
+            $('#enterPlayer').val('')
             $('.playerList').append("<p class='nameListe'>" + name + "</p>");
             e.preventDefault();
         });
@@ -87,12 +87,18 @@ function getRandomInt(max) {
                 let x = getRandomInt(questionX[0].length);
                 if (nameList.length > 0) {
                     let y = getRandomInt(nameList.length);
-
+                    
                     $('#showDT').append("<p class='listDT'><strong>" + nameList[y] + "</strong> : " + questionX[0][x] + "</p>");
+                    
                 } else {
                     $('#showDT').append("<p class='listDT'>Y'a personne pour jouer !</p>");
                 }
             }
+        });
+
+        $('#trustBtn').click(function(){
+            $('.listDT').css('display','none');
+            $('.listDT').fadeIn(1800);
         });
 
         /* ------------------------------- fct dareBtn + error------------------------------ */
@@ -111,7 +117,10 @@ function getRandomInt(max) {
                 }
             }
 
-
+        });
+        $('#dareBtn').click(function(){
+            $('.listDT').css('display','none');
+            $('.listDT').fadeIn(1800);
         });
     });
 })(jQuery);
