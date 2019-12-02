@@ -1,3 +1,27 @@
-[
-    {}
-]
+
+
+{
+    "hotQuestions": [
+    "Nini, bois un coup mon pote !",
+    "hello",
+    "francis",
+    "yoooooo"
+    ],
+    "hotGage":[
+    "Tu peux boire un coup Bébé Auré !",
+    "prie",
+    "a poil"
+    ],
+
+
+    "fiestaQuestions" : [
+        "Nini, bois un coup mon pote !",
+        "oui",
+        "yeaaah"
+    ],
+    "fiestaGage" : [
+        "Tu peux boire un coup Bébé Auré !",
+        "aurevoir",
+        "badaboom"
+    ]
+  }
