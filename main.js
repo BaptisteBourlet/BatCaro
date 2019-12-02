@@ -6,16 +6,15 @@ function getRandomInt(max) {
 
 (function ($) {
     $(document).ready(function () {
-/* ------------------------- recup des données json ------------------------- */
-let questionX
-let dareX
-
-        function succesfct() {
+        /* ------------------------- recup des données json fiesta Mode------------------------- */
+        let questionX
+        let dareX
+        $("#fiestaMod").on('click', function succesfct() {
             $.ajax({
                 url: 'data.json',
                 dataType: "json",
                 type: "get",
-                success: showContent,
+                success: showContentFiesta,
                 error: function (err) {
                     if (err.status == 404) {
                         console.log(err + 'il y a une erreur');
@@ -23,18 +22,36 @@ let dareX
                     }
                 }
             });
-            function showContent(result) {
-                $("#fiestaMod").on('click', function () {
-                    questionX = result.fiestaQuestions;
-                    dareX = result.fiestaGage;
-                });
+            function showContentFiesta(result) {
+                questionX = result.fiestaQuestions;
+                dareX = result.fiestaGage;
+            };
+        });
 
-                $("#hotMod").on('click', function () {
-                    questionX = result.hotQuestions;
-                    dareX = result.hotGage;
-                });
-            }
-        }
+
+        /* --------------------- recup des données json mode hot -------------------- */
+
+        $("#hotMod").on('click', function succesfct() {
+            $.ajax({
+                url: 'data.json',
+                dataType: "json",
+                type: "get",
+                success: showContentHot,
+                error: function (err) {
+                    if (err.status == 404) {
+                        console.log(err + 'il y a une erreur');
+                        $('div').html('errooooor');
+                    }
+                }
+            });
+            function showContentHot(result) {
+                questionX = result.hotQuestions;
+                dareX = result.hotGage;
+            };
+        });
+
+
+
 
         let nameList = [];
 
@@ -52,7 +69,6 @@ let dareX
 
         $('#trustBtn').click(function () {
             $('.listDT').remove();
-            succesfct()
             if (questionX == undefined) {
                 $('#showDT').append("<p class='listDT'>Vous n'avez pas choisi de mode bande de Niouk !</p>");
             } else {
@@ -77,6 +93,7 @@ let dareX
 
         $('#dareBtn').click(function () {
             $('.listDT').remove();
+
             if (dareX == undefined) {
                 $('#showDT').append("<p class='listDT'>Vous n'avez pas choisi de mode bande de Niouk !</p>");
             } else {
