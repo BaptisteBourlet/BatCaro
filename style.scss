@@ -1,12 +1,48 @@
 //test
 $pink: #c6538c;
 //les animations
-@keyframes boule {
+@keyframes SizePlayerName {
     from{
-        transform: rotate(0deg);
+        font-size: 2em;
     }
     to{
+        font-size: 1.2em;
+    }
+  }
+  @keyframes boule {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
         transform: rotate(359deg);
+    }
+  }
+  @keyframes ButtonFiestaAnim {
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(7deg);
+    }
+    60%{
+        transform: rotate(-4deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+  }
+  @keyframes ButtonHotAnim {
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(-2deg);
+    }
+    60%{
+        transform: rotate(3deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
   }
 body{
@@ -25,8 +61,10 @@ margin: 0;
         height: 120px;
         border: none;
         font-family: 'Oldenburg', cursive;
-        &:hover{
-            filter: contrast(2.5);
+        
+        transition: all .2s ease-in-out;
+        &:active{
+            font-size: 2.3em;
         }
 }
 //systeme de mise en place pour choix de difficulté
@@ -42,6 +80,10 @@ margin: 0;
     color: rgb(255, 255, 255);
     background: url(pancarte1.png);
     background-size: contain;
+    animation: ButtonFiestaAnim 3s infinite linear;
+    &:hover{
+        color: rgb(135, 59, 206);;
+    }
     
 }
 #hotMod{
@@ -49,7 +91,11 @@ margin: 0;
     grid-row: 12;
     color: rgb(255, 255, 255);
     background: url(pancarte2.png);
-    background-size: contain; 
+    background-size: contain;
+    animation: ButtonHotAnim 3s infinite linear; 
+    &:hover{
+        color: rgb(141, 16, 16);;
+    }
 }
 //liste nom joueurs
 .playerList{
@@ -61,6 +107,10 @@ margin: 0;
     font-weight: bold;
     padding-bottom: 300px;
 }
+p.nameListe{
+    animation: SizePlayerName 0.5s 1 ease-in ;   
+}
+
 //systeme de grid pour entrer nom joueur
 .wrapperPlayers{
     display: grid;
@@ -81,6 +131,7 @@ margin: 0;
     font-size:1.5rem ;
     text-align: center;
 }
+
 ::placeholder{
     font-size: 1.5rem;
     text-align: center;
@@ -94,6 +145,10 @@ margin: 0;
     background-size: contain;
     border: none;
     font-family: 'Oldenburg', cursive;
+    transition: all .2s ease-in-out;
+    &:hover{
+        transform: scale(1.2) rotate(3deg);
+    }
 }
 //la fumée qui plane dans la boule
 #FumeeMagique{
@@ -105,7 +160,7 @@ margin: 0;
     grid-row: 3;
     margin-left: 303px;
     margin-top: -4px;
-    animation: boule 12s infinite linear;;
+    animation: boule 12s infinite linear;
 }
 //section game
 .game{
