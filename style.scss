@@ -1,5 +1,14 @@
 //test
 $pink: #c6538c;
+//les animations
+@keyframes boule {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+  }
 body{
 margin: 0;
 }
@@ -88,12 +97,15 @@ margin: 0;
 }
 //la fumée qui plane dans la boule
 #FumeeMagique{
-    height: 130px;
-    width: 130px;
-    background-color: red;
+    height: 200px;
+    width: 200px;
+    background-image: url("smoke4.png");
+    background-size:contain ;
     grid-column: 2;
     grid-row: 3;
-    justify-self: center;
+    margin-left: 303px;
+    margin-top: -4px;
+    animation: boule 12s infinite linear;;
 }
 //section game
 .game{
