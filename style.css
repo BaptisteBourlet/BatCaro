@@ -1,3 +1,87 @@
+@-webkit-keyframes SizePlayerName {
+  from {
+    font-size: 2em; }
+  to {
+    font-size: 1.2em; } }
+
+@keyframes SizePlayerName {
+  from {
+    font-size: 2em; }
+  to {
+    font-size: 1.2em; } }
+
+@-webkit-keyframes boule {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes boule {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@-webkit-keyframes ButtonFiestaAnim {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  30% {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg); }
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@keyframes ButtonFiestaAnim {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  30% {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg); }
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@-webkit-keyframes ButtonHotAnim {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  30% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg); }
+  60% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@keyframes ButtonHotAnim {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  30% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg); }
+  60% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
 body {
   margin: 0; }
 
@@ -11,10 +95,12 @@ body {
   width: 350px;
   height: 120px;
   border: none;
-  font-family: 'Oldenburg', cursive; }
-  .caroButtonMod:hover {
-    -webkit-filter: contrast(2.5);
-    filter: contrast(2.5); }
+  font-family: 'Oldenburg', cursive;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .caroButtonMod:active {
+    font-size: 2.3em; }
 
 .wrapperModChoice {
   display: -ms-grid;
@@ -31,7 +117,11 @@ body {
   grid-row: 7;
   color: white;
   background: url(pancarte1.png);
-  background-size: contain; }
+  background-size: contain;
+  -webkit-animation: ButtonFiestaAnim 3s infinite linear;
+  animation: ButtonFiestaAnim 3s infinite linear; }
+  #fiestaMod:hover {
+    color: #873bce; }
 
 #hotMod {
   -ms-grid-column: 6;
@@ -40,7 +130,11 @@ body {
   grid-row: 12;
   color: white;
   background: url(pancarte2.png);
-  background-size: contain; }
+  background-size: contain;
+  -webkit-animation: ButtonHotAnim 3s infinite linear;
+  animation: ButtonHotAnim 3s infinite linear; }
+  #hotMod:hover {
+    color: #8d1010; }
 
 .playerList {
   -ms-grid-column: 12;
@@ -53,20 +147,25 @@ body {
   font-weight: bold;
   padding-bottom: 300px; }
 
+p.nameListe {
+  -webkit-animation: SizePlayerName 0.5s 1 ease-in;
+  animation: SizePlayerName 0.5s 1 ease-in; }
+
 .wrapperPlayers {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33% 33% 33%;
-  grid-template-columns: 33% 33% 33%;
+  -ms-grid-columns: 25% 50% 25%;
+  grid-template-columns: 25% 50% 25%;
   -ms-grid-rows: 100px 100px 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px 100px 100px;
-  justify-items: center; }
+  grid-template-rows: 100px 100px 100px 100px 100px; }
 
 #formPlayerName {
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 2;
-  grid-row: 2; }
+  grid-row: 2;
+  -ms-grid-column-align: center;
+  justify-self: center; }
 
 #enterPlayer {
   height: 50px;
@@ -103,7 +202,28 @@ body {
   background: url(pancarte1.png);
   background-size: contain;
   border: none;
-  font-family: 'Oldenburg', cursive; }
+  font-family: 'Oldenburg', cursive;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  #submit:hover {
+    -webkit-transform: scale(1.2) rotate(3deg);
+    -ms-transform: scale(1.2) rotate(3deg);
+    transform: scale(1.2) rotate(3deg); }
+
+#FumeeMagique {
+  height: 200px;
+  width: 200px;
+  background-image: url("smoke4.png");
+  background-size: contain;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  margin-left: 303px;
+  margin-top: -4px;
+  -webkit-animation: boule 12s infinite linear;
+  animation: boule 12s infinite linear; }
 
 .game {
   height: 100vh; }
