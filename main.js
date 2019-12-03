@@ -1,12 +1,15 @@
-
 /* ---------------------------- fct randomNumber ---------------------------- */
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
-}
+};
+
+/* --------------------------------- jQuery --------------------------------- */
 
 (function ($) {
     $(document).ready(function () {
+
         /* ------------------------- recup des données json fiesta Mode------------------------- */
+
         let questionX
         let dareX
         $("#fiestaMod").on('click', function succesfct() {
@@ -27,7 +30,6 @@ function getRandomInt(max) {
                 dareX = result.fiestaGage;
             };
         });
-
 
         /* --------------------- recup des données json mode hot -------------------- */
 
@@ -50,13 +52,9 @@ function getRandomInt(max) {
             };
         });
 
-
-
-
-        let nameList = [];
-
         /* --------------------- fct inscription player in form --------------------- */
 
+        let nameList = [];
         $("#submit").click(function (e) {
             var name = $('#enterPlayer').val();
             if (name.length > 0) nameList.push(name);
@@ -105,7 +103,6 @@ function getRandomInt(max) {
                     $('#showDT').append("<p class='listDT'>Y'a personne pour jouer !</p>");
                 }
             }
-
         });
         $('#dareBtn').click(function () {
             $('.listDT').css('display', 'none');
