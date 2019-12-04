@@ -8,24 +8,18 @@
     <title>Dare or Trust</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Oldenburg&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 </head>
 
 
 <body>
-    <div class="sound" style="position: absolute; height: 1px; width: 1px; overflow: hidden;">
-        <object>
-            <param name="autostart" value="true">
-            <param name="irish.mp3" value="irish.mp3">
-            <param name="autoplay" value="true">
-            <param name="controller" value="true">
-            <embed src="irish.mp3" controller="true" autoplay="true" autostart="True" type="audio/mp3" />
-        </object>
-    </div>
-
+<audio id="mySong" width="320" height="176">
+  <source src="irish.mp3" type="audio/mp3">
+</audio>
     <section class="home">
         <div class="modChoice wrapperModChoice">
-            <button id="music">stop/play music</button>
+            <button onclick="playVid()" type="button">Play song</button>
+<button onclick="pauseVid()" type="button">Pause song</button>
             <button class="caroButtonMod" id="fiestaMod">Mode posey</button>
             <button class="caroButtonMod" id="hotMod">Mode Agrayouu</button>
             <div class="playerList"></div>
@@ -45,8 +39,6 @@
         </div>
 
         <div class="animRandomDT" id="showDT">
-
-
         </div>
         <div class="gameReroll">
             <button id="trustBtn">Trust</button>

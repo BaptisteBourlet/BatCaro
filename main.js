@@ -111,3 +111,13 @@ function getRandomInt(max) {
 
     });
 })(jQuery);
+
+var vid = document.getElementById("mySong"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+}
