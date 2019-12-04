@@ -109,6 +109,15 @@ function getRandomInt(max) {
             $('.listDT').fadeIn(1800);
         });
 
+
+        $(document).ready(function(){
+            $('#anchor').on('click', function(e){
+               e.preventDefault(); 
+         var target = $(this).attr('href');
+         $('html, body').stop()
+               .animate({scrollTop: $(target).offset().top}, 1300 );
+            });
+        });
     });
 })(jQuery);
 
