@@ -53,12 +53,18 @@ function getRandomInt(max) {
         });
 
         /* --------------------- fct inscription player in form --------------------- */
+        var back = ["red", "dark-blue", "white", "green", "yellow", "purple", "orange", "black", "pink", "gray", "light-blue"];
 
+
+        let nbr = 0;
         let nameList = [];
         $("#submit").click(function (e) {
+            nbr += 1;
+            var rand = back[nbr];
+            $('.game').css('background', rand);
             var name = $('#enterPlayer').val();
             if (name.length > 0) nameList.push(name);
-            $('#enterPlayer').val('')
+            $('#enterPlayer').val('');
             $('.playerList').append("<p class='nameListe'>" + name + "</p>");
             e.preventDefault();
         });
@@ -109,24 +115,20 @@ function getRandomInt(max) {
             $('.listDT').fadeIn(1800);
         });
 
+        /* ------------------------------ Bouton Jouer ------------------------------ */
 
-        $(document).ready(function(){
-            $('#anchor').on('click', function(e){
-               e.preventDefault(); 
-         var target = $(this).attr('href');
-         $('html, body').stop()
-               .animate({scrollTop: $(target).offset().top}, 1300 );
-            });
+        $('#anchor').on('click', function (e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body').stop()
+                .animate({ scrollTop: $(target).offset().top }, 1300);
         });
+
     });
 })(jQuery);
 
-var vid = document.getElementById("mySong"); 
+/* ---------------------------- bouton play pause --------------------------- */
 
-function playVid() { 
-  vid.play(); 
-} 
-
-function pauseVid() { 
-  vid.pause(); 
-}
+const vid = document.getElementById("mySong");
+function playVid() { vid.play() };
+function pauseVid() { vid.pause() };
