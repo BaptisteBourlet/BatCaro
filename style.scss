@@ -84,6 +84,9 @@ margin: 0;
     &:hover{
         color: rgb(135, 59, 206);;
     }
+    &:focus{
+        outline:0;
+     }
     
 }
 #hotMod{
@@ -96,6 +99,9 @@ margin: 0;
     &:hover{
         color: rgb(141, 16, 16);;
     }
+    &:focus{
+        outline:0;
+     }
 }
 //liste nom joueurs
 .playerList{
@@ -110,6 +116,7 @@ margin: 0;
 p.nameListe{
     animation: SizePlayerName 0.5s 1 ease-in ;   
 }
+
 
 //systeme de grid pour entrer nom joueur
 .wrapperPlayers{
@@ -149,6 +156,9 @@ p.nameListe{
     &:hover{
         transform: scale(1.2) rotate(3deg);
     }
+    &:focus{
+        outline:0;
+     }
 }
 //la fumée qui plane dans la boule
 #FumeeMagique{
@@ -161,6 +171,34 @@ p.nameListe{
     margin-left: 303px;
     margin-top: -4px;
     animation: boule 12s infinite linear;
+}
+//bouton play
+#play{
+    grid-column: 2;
+    grid-row: 3;
+    background: url(pancarte1.png);
+    background-size: contain;
+    height: 80px;
+    width: 240px;
+    justify-self: center;
+    z-index: 10000;
+    margin-right: 5em;
+    margin-top: 4em;
+    border: none;
+    font-size: 2rem;
+    font-family: 'Oldenburg', cursive;
+    transition: all .2s ease-in-out;
+    &:hover{
+        transform: scale(1.5) rotate(6deg);
+        color: rgb(167, 4, 4);
+    }
+    &:active{
+        color: purple;
+    }
+    &:focus{
+       outline:0;
+    }
+
 }
 //section game
 .game{
