@@ -108,5 +108,6 @@ function getRandomInt(max) {
             $('.listDT').css('display', 'none');
             $('.listDT').fadeIn(1800);
         });
+
     });
 })(jQuery);

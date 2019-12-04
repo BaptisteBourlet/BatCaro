@@ -8,22 +8,24 @@
     <title>Dare or Trust</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Oldenburg&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 </head>
+
 
 <body>
     <div class="sound" style="position: absolute; height: 1px; width: 1px; overflow: hidden;">
         <object>
-                <param name="autostart" value="true">
-                <param name="irish.mp3" value="irish.mp3">
-                <param name="autoplay" value="true"> 
-                <param name="controller" value="true">
-                <embed src="irish.mp3" controller="true" autoplay="true" autostart="True" type="audio/mp3" />
+            <param name="autostart" value="true">
+            <param name="irish.mp3" value="irish.mp3">
+            <param name="autoplay" value="true">
+            <param name="controller" value="true">
+            <embed src="irish.mp3" controller="true" autoplay="true" autostart="True" type="audio/mp3" />
         </object>
-</div>
+    </div>
 
     <section class="home">
         <div class="modChoice wrapperModChoice">
+            <button id="music">stop/play music</button>
             <button class="caroButtonMod" id="fiestaMod">Mode posey</button>
             <button class="caroButtonMod" id="hotMod">Mode Agrayouu</button>
             <div class="playerList"></div>
@@ -34,6 +36,7 @@
                 <input type="submit" id="submit">
             </form>
             <div id="FumeeMagique"></div>
+            <button id="play">Jouer</button>
         </div>
     </section>
     <section class="game">
@@ -42,7 +45,7 @@
         </div>
 
         <div class="animRandomDT" id="showDT">
-            
+
 
         </div>
         <div class="gameReroll">
@@ -50,7 +53,6 @@
             <button id="dareBtn">dare</button>
         </div>
     </section>
-    <div style="z-index:9;visibility:visible;"><a href="https://www.totallyfreecursors.com/" target="_blank" class="tfc"><img src="https://downloads.totallyfreecursors.com/public/CursorsLogo88-31.gif" width="88" height="31" alt="Free Beer Cursors at www.totallyfreecursors.com" /></a></div><style>HTML,BODY{cursor: url("https://downloads.totallyfreecursors.com/cursor_files/beer.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/beer.gif"), auto;}</style>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
