@@ -55,15 +55,23 @@ margin: 0;
     background-size: cover;  
 }
 //boutons play et pause
+#backgroundButton{
+    background: url(pancarte1.png);
+    background-size: contain; 
+    height: 100px;
+    width: 300px;
+}
 #playVideo{
     background: url(play.png);
     background-size: contain;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border: none;
     grid-column: 1;
     grid-row: 1;
     transition: all .2s ease-in-out;
+    margin-left: 90px;
+    margin-top: 25px;
     &:hover{
         transform: scale(1.3);
     }
@@ -71,13 +79,13 @@ margin: 0;
 #pauseVideo{
     background: url(pause.png);
     background-size: contain;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border: none;
     grid-column: 1;
     grid-row: 1;
-    margin-left: 100px;
     transition: all .2s ease-in-out;
+    margin-left: 10px;
     &:hover{
         transform: scale(1.3);
     }
