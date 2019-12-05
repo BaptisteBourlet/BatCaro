@@ -53,19 +53,18 @@ function getRandomInt(max) {
         });
 
         /* --------------------- fct inscription player in form --------------------- */
-        var back = ["red", "dark-blue", "white", "green", "yellow", "purple", "orange", "black", "pink", "gray", "light-blue"];
-
-
-        let nbr = 0;
+        var back = ["navy","gold","dodgerblue","red", "skyblue","green", "yellow", "purple", "orange", "black", "pink", "gray","yellowgreen","turquoise"];
+        let nbr = -1;
         let nameList = [];
         $("#submit").click(function (e) {
             nbr += 1;
             var rand = back[nbr];
-            $('.game').css('background', rand);
+            
             var name = $('#enterPlayer').val();
             if (name.length > 0) nameList.push(name);
             $('#enterPlayer').val('');
             $('.playerList').append("<p class='nameListe'>" + name + "</p>");
+            $('.playerList :last-child').css('color', rand);
             e.preventDefault();
         });
 
