@@ -67,10 +67,9 @@ body { margin: 0; }
 
 #hotMod:focus { outline: 0; }
 
-/* ---------------------------- liste nom joueurs --------------------------- */
-.playerList { -ms-grid-column: 8; grid-column: 8; -ms-grid-row: 3; grid-row: 3; color: white; font-size: 1.2em; font-family: 'Oldenburg', cursive; font-weight: bold; min-height: 300px; }
+.playerList { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-grid-column: 8; grid-column: 8; -ms-grid-row: 2; grid-row: 2; width: 250px; color: white; font-size: 1.2em; font-family: 'Oldenburg', cursive; font-weight: bold; padding-bottom: 300px; }
 
-p.nameListe { -webkit-animation: SizePlayerName 0.5s 1 ease-in; animation: SizePlayerName 0.5s 1 ease-in; }
+p.nameListe { margin-bottom: 0px; padding-left: 40px; -webkit-animation: SizePlayerName 0.5s 1 ease-in; animation: SizePlayerName 0.5s 1 ease-in; }
 
 /* ----------------- systeme de grid pour entrer nom joueur ----------------- */
 .wrapperPlayers { display: -ms-grid; display: grid; -ms-grid-columns: 25% 50% 25%; grid-template-columns: 25% 50% 25%; -ms-grid-rows: 100px 100px 100px 100px 100px; grid-template-rows: 100px 100px 100px 100px 100px; }
