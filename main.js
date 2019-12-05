@@ -111,7 +111,7 @@ function getRandomInt(max) {
         });
         $('#dareBtn').click(function () {
             $('.listDT').css('display', 'none');
-            $('.listDT').fadeIn(1800);
+            $('.listDT').fadeIn(2500);
         });
 
         /* ------------------------------ Bouton Jouer ------------------------------ */
