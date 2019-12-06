@@ -34,7 +34,7 @@
 body { margin: 0; }
 
 /* ------------------------------ section home ------------------------------ */
-.home { height: 100vh; background-image: url(taverne.jpg); background-size: cover; }
+.home { height: 100vh; background-image: url(taverne.jpg); background-size: cover; border-bottom: 20px solid black; }
 
 /* -------------------------- boutons play et pause ------------------------- */
 #backgroundButton { background: url(pancarte1.png); background-size: contain; height: 100px; width: 300px; position: fixed; }
@@ -68,9 +68,9 @@ body { margin: 0; }
 #hotMod:focus { outline: 0; }
 
 /* ---------------------------- liste nom joueurs --------------------------- */
-.playerList { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-grid-column: 8; grid-column: 8; -ms-grid-row: 2; grid-row: 2; width: 250px; color: white; font-size: 1.2em; font-family: 'Oldenburg', cursive; font-weight: bold; min-height: 300px; }
+.playerList { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-grid-column: 8; grid-column: 8; -ms-grid-row: 2; grid-row: 2; width: 300px; color: white; font-size: 1.2em; font-family: 'Oldenburg', cursive; font-weight: bold; min-height: 300px; }
 
-p.nameListe { margin-bottom: 0px; padding-left: 40px; -webkit-animation: SizePlayerName 0.5s 1 ease-in; animation: SizePlayerName 0.5s 1 ease-in; }
+p.nameListe { margin-bottom: 0px; padding-left: 10px; -webkit-animation: SizePlayerName 0.5s 1 ease-in; animation: SizePlayerName 0.5s 1 ease-in; }
 
 /* ----------------- systeme de grid pour entrer nom joueur ----------------- */
 .wrapperPlayers { display: -ms-grid; display: grid; -ms-grid-columns: 25% 50% 25%; grid-template-columns: 25% 50% 25%; -ms-grid-rows: 100px 100px 100px 100px 100px; grid-template-rows: 100px 100px 100px 100px 100px; }
