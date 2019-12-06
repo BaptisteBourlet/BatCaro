@@ -53,14 +53,15 @@ function getRandomInt(max) {
         });
 
         /* --------------------- fct inscription player in form --------------------- */
-        var back = ["navy","gold","dodgerblue","red", "skyblue","green", "yellow", "purple", "orange", "black", "pink", "gray","yellowgreen","turquoise"];
+        var back = ["navy", "gold", "dodgerblue", "red", "skyblue", "green", "yellow", "purple", "orange", "black", "pink", "yellowgreen", "turquoise", "beige", "blueviolet", "chartreuse"];
         let nbr = -1;
         let nameList = [];
         $("#submit").click(function (e) {
             nbr += 1;
             var rand = back[nbr];
-            
+
             var name = $('#enterPlayer').val();
+            name = name.toUpperCase();
             if (name.length > 0) nameList.push(name);
             $('#enterPlayer').val('');
             $('.playerList').append("<p class='nameListe'>" + name + "</p>");
@@ -117,6 +118,13 @@ function getRandomInt(max) {
         /* ------------------------------ Bouton Jouer ------------------------------ */
 
         $('#anchor').on('click', function (e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body').stop()
+                .animate({ scrollTop: $(target).offset().top }, 1300);
+        });
+
+        $('#anchor2').on('click', function (e) {
             e.preventDefault();
             var target = $(this).attr('href');
             $('html, body').stop()
