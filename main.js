@@ -67,7 +67,13 @@ function getRandomInt(max) {
             $('.playerList').append("<p class='nameListe'>" + name + "</p>");
             $('.playerList :last-child').css('color', rand);
             e.preventDefault();
+
         });
+        
+        $('#delete').click(function () {
+            $('.nameListe').remove();
+        });
+        
 
         /* ------------------------------ fct trustBtn + error------------------------------ */
 
