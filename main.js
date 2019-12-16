@@ -53,14 +53,14 @@ function getRandomInt(max) {
         });
 
         /* --------------------- fct inscription player in form --------------------- */
-        var back = ["navy", "gold", "dodgerblue", "red", "skyblue", "green", "yellow", "purple", "orange", "black", "pink", "yellowgreen", "turquoise", "beige", "blueviolet", "chartreuse"];
+        const back = ["navy", "gold", "dodgerblue", "red", "skyblue", "green", "yellow", "purple", "orange", "black", "pink", "yellowgreen", "turquoise", "beige", "blueviolet", "chartreuse"];
         let nbr = -1;
         let nameList = [];
         $("#submit").click(function (e) {
             nbr += 1;
-            var rand = back[nbr];
+            let rand = back[nbr];
 
-            var name = $('#enterPlayer').val();
+            let name = $('#enterPlayer').val();
             name = name.toUpperCase();
             if (name.length > 0) nameList.push(name);
             $('#enterPlayer').val('');
@@ -72,6 +72,7 @@ function getRandomInt(max) {
         
         $('#delete').click(function () {
             $('.nameListe').remove();
+            nameList = [];
         });
         
 
