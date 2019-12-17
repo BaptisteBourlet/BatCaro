@@ -56,6 +56,7 @@ function getRandomInt(max) {
         const back = ["navy", "gold", "dodgerblue", "red", "skyblue", "green", "yellow", "purple", "orange", "black", "pink", "yellowgreen", "turquoise", "beige", "blueviolet", "chartreuse"];
         let nbr = -1;
         let nameList = [];
+
         $("#submit").click(function (e) {
             nbr += 1;
             let rand = back[nbr];
@@ -122,7 +123,7 @@ function getRandomInt(max) {
             $('.listDT').fadeIn(2500);
         });
 
-        /* ------------------------------ Bouton Jouer ------------------------------ */
+        /* ------------------------------ Bouton Jouer et up ------------------------------ */
 
         $('#anchor').on('click', function (e) {
             e.preventDefault();
