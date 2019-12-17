@@ -60,6 +60,18 @@ margin: 0;
 
 /* -------------------------- boutons play et pause ------------------------- */
 
+#delete{
+    background: url(pancarte1.png);
+    background-size: contain; 
+    height: 100px;
+    width: 300px;
+    margin: 80px 0 0 1200px;
+    color: white;
+    font-family: 'Oldenburg', cursive;
+    font-size: 1.6em;
+    border: none;
+}
+
 #backgroundButton{
     background: url(pancarte1.png);
     background-size: contain; 
@@ -105,7 +117,6 @@ margin: 0;
         height: 120px;
         border: none;
         font-family: 'Oldenburg', cursive;
-        
         transition: all .2s ease-in-out;
         &:active{
             font-size: 2.3em;
