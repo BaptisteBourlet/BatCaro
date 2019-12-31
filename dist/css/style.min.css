@@ -37,33 +37,33 @@ body { margin: 0; }
 .home { height: 100vh; background-image: url(taverne.jpg); background-size: cover; border-bottom: 20px solid black; }
 
 /* -------------------------- boutons play et pause ------------------------- */
-#delete { background: url(pancarte1.png); background-size: contain; height: 100px; width: 300px; margin: 80px 0 0 1200px; color: white; font-family: 'Oldenburg', cursive; font-size: 1.6em; border: none; }
+#delete { background: url(pancarte1.png); background-size: contain; height: 100px; width: 300px; margin: 80px 0 0 1200px; color: white; font-family: 'Oldenburg', cursive; font-size: 1.6em; border: none; cursor: pointer; }
 
-#backgroundButton { background: url(pancarte1.png); background-size: contain; height: 100px; width: 300px; position: fixed; }
+#backgroundButton { background: url(pancarte1.png); background-size: contain; height: 100px; width: 300px; position: fixed; cursor: pointer; }
 
-#playVideo { background: url(play.png); background-size: contain; height: 50px; width: 50px; border: none; -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 1; grid-row: 1; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; margin-left: 90px; margin-top: 25px; }
+#playVideo { background: url(play.png); background-size: contain; height: 50px; width: 50px; border: none; -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 1; grid-row: 1; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; margin-left: 90px; margin-top: 25px; cursor: pointer; }
 
 #playVideo:hover { -webkit-transform: scale(1.3); transform: scale(1.3); }
 
-#pauseVideo { background: url(pause.png); background-size: contain; height: 50px; width: 50px; border: none; -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 1; grid-row: 1; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; margin-left: 10px; }
+#pauseVideo { background: url(pause.png); background-size: contain; height: 50px; width: 50px; border: none; -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 1; grid-row: 1; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; margin-left: 10px; cursor: pointer; }
 
 #pauseVideo:hover { -webkit-transform: scale(1.3); transform: scale(1.3); }
 
 /* --------------------- les boutons de selection du mod -------------------- */
-.caroButtonMod { font-size: 30px; width: 350px; height: 120px; border: none; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+.caroButtonMod { font-size: 30px; width: 350px; height: 120px; border: none; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; cursor: pointer; }
 
 .caroButtonMod:active { font-size: 2.3em; }
 
 /* ------------ systeme de mise en place pour choix de difficulté ----------- */
 .wrapperModChoice { display: -ms-grid; display: grid; -ms-grid-columns: 25% 5% 5% 1% 3% 10% 17% auto; grid-template-columns: 25% 5% 5% 1% 3% 10% 17% auto; -ms-grid-rows: 250px 10px 10px 25px 25px 25px 25px  10px 10px  25px 25px auto; grid-template-rows: 250px 10px 10px 25px 25px 25px 25px  10px 10px  25px 25px auto; }
 
-#fiestaMod { -ms-grid-column: 2; grid-column: 2; -ms-grid-row: 9; grid-row: 9; color: white; background: url(pancarte1.png); background-size: contain; -webkit-animation: ButtonFiestaAnim 3s infinite linear; animation: ButtonFiestaAnim 3s infinite linear; }
+#fiestaMod { -ms-grid-column: 2; grid-column: 2; -ms-grid-row: 9; grid-row: 9; color: white; background: url(pancarte1.png); background-size: contain; -webkit-animation: ButtonFiestaAnim 3s infinite linear; animation: ButtonFiestaAnim 3s infinite linear; cursor: pointer; }
 
 #fiestaMod:hover { color: #873bce; }
 
 #fiestaMod:focus { outline: 0; }
 
-#hotMod { -ms-grid-column: 2; grid-column: 2; -ms-grid-row: 2; grid-row: 2; color: white; background: url(pancarte2.png); background-size: contain; -webkit-animation: ButtonHotAnim 3s infinite linear; animation: ButtonHotAnim 3s infinite linear; }
+#hotMod { -ms-grid-column: 2; grid-column: 2; -ms-grid-row: 2; grid-row: 2; color: white; background: url(pancarte2.png); background-size: contain; -webkit-animation: ButtonHotAnim 3s infinite linear; animation: ButtonHotAnim 3s infinite linear; cursor: pointer; }
 
 #hotMod:hover { color: #8d1010; }
 
@@ -89,7 +89,7 @@ p.nameListe { margin-bottom: 0px; padding-left: 10px; -webkit-animation: SizePla
 
 ::placeholder { font-size: 1.5rem; text-align: center; color: white; }
 
-#submit { font-size: 30px; width: 180px; height: 60px; background: url(pancarte1.png); background-size: contain; border: none; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+#submit { font-size: 30px; width: 180px; height: 60px; background: url(pancarte1.png); background-size: contain; border: none; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; cursor: pointer; }
 
 #submit:hover { -webkit-transform: scale(1.2) rotate(3deg); transform: scale(1.2) rotate(3deg); }
 
@@ -101,7 +101,7 @@ p.nameListe { margin-bottom: 0px; padding-left: 10px; -webkit-animation: SizePla
 /* ------------------------------- bouton play ------------------------------ */
 #anchor { -ms-grid-column: 2; grid-column: 2; -ms-grid-row: 3; grid-row: 3; margin-right: 9em; margin-top: 7em; -ms-grid-column-align: center; justify-self: center; z-index: 10000; }
 
-#play { background: url(pancarte1.png); background-size: contain; height: 80px; width: 240px; border: none; font-size: 2rem; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+#play { background: url(pancarte1.png); background-size: contain; height: 80px; width: 240px; border: none; font-size: 2rem; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; cursor: pointer; }
 
 #play:hover { -webkit-transform: scale(1.5) rotate(6deg); transform: scale(1.5) rotate(6deg); color: #a70404; }
 
@@ -120,10 +120,12 @@ p.nameListe { margin-bottom: 0px; padding-left: 10px; -webkit-animation: SizePla
 .animRandomDT { -ms-grid-column: 2; grid-column: 2; -ms-grid-row: 2; grid-row: 2; }
 
 /* --------------------------- phrase qui apparait -------------------------- */
-.listDT { text-align: center; font-size: 3rem; color: white; font-family: 'Oldenburg', cursive; padding: 100px; }
+.listDT { text-align: center; font-size: 3rem; color: white; font-family: 'Oldenburg', cursive; padding: 100px; padding-top: 0; }
+
+.listPlayer { text-align: center; font-size: 3rem; color: white; font-family: 'Oldenburg', cursive; padding: 0; margin-top: 0; }
 
 /* -------------------------- bouton gage et vérité ------------------------- */
-#dareBtn { background: url(pancarte1.png); background-size: contain; height: 120px; width: 358px; border: none; font-size: 2rem; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+#dareBtn { background: url(pancarte1.png); background-size: contain; height: 120px; width: 358px; border: none; font-size: 2rem; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; cursor: pointer; }
 
 #dareBtn:hover { -webkit-transform: scale(1.5) rotate(6deg); transform: scale(1.5) rotate(6deg); color: #a70404; }
 
@@ -131,11 +133,19 @@ p.nameListe { margin-bottom: 0px; padding-left: 10px; -webkit-animation: SizePla
 
 #dareBtn:focus { outline: 0; }
 
-#trustBtn { background: url(pancarte1.png); background-size: contain; height: 120px; width: 358px; border: none; font-size: 2rem; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+#trustBtn { background: url(pancarte1.png); background-size: contain; height: 120px; width: 358px; border: none; font-size: 2rem; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; cursor: pointer; }
 
 #trustBtn:hover { -webkit-transform: scale(1.5) rotate(-6deg); transform: scale(1.5) rotate(-6deg); color: #a70404; }
 
 #trustBtn:active { color: purple; }
 
 #trustBtn:focus { outline: 0; }
+
+#findPlayer { background: url(pancarte1.png); background-size: contain; height: 120px; width: 358px; border: none; font-size: 2rem; font-family: 'Oldenburg', cursive; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; cursor: pointer; }
+
+#findPlayer:hover { -webkit-transform: scale(1.5); transform: scale(1.5); color: #a70404; }
+
+#findPlayer:active { color: purple; }
+
+#findPlayer:focus { outline: 0; }
 /*# sourceMappingURL=style.min.css.map */
