@@ -70,12 +70,12 @@ function getRandomInt(max) {
             e.preventDefault();
 
         });
-        
+
         $('#delete').click(function () {
             $('.nameListe').remove();
             nameList = [];
         });
-        
+
 
         /* ------------------------------ fct trustBtn + error------------------------------ */
 
@@ -88,7 +88,7 @@ function getRandomInt(max) {
                 if (nameList.length > 0) {
                     let y = getRandomInt(nameList.length);
 
-                    $('#showDT').append("<p class='listDT'><strong>" + nameList[y] + "</strong> : " + questionX[x] + "</p>");
+                    $('#showDT').append("<p class='listDT'><strong>" + questionX[x] + "</p>");
 
                 } else {
                     $('#showDT').append("<p class='listDT'>Y'a personne pour jouer !</p>");
@@ -111,8 +111,8 @@ function getRandomInt(max) {
             } else {
                 let x = getRandomInt(dareX.length);
                 if (nameList.length > 0) {
-                    let y = getRandomInt(nameList.length);
-                    $('#showDT').append("<p class='listDT'><strong>" + nameList[y] + "</strong> : " + dareX[x] + "</p>");
+
+                    $('#showDT').append("<p class='listDT'>" + dareX[x] + "</p>");
                 } else {
                     $('#showDT').append("<p class='listDT'>Y'a personne pour jouer !</p>");
                 }
@@ -120,7 +120,28 @@ function getRandomInt(max) {
         });
         $('#dareBtn').click(function () {
             $('.listDT').css('display', 'none');
-            $('.listDT').fadeIn(2500);
+            $('.listDT').fadeIn(1800);
+        });
+
+        /* ------------------------- fct findPlayer + error ------------------------- */
+        $('#findPlayer').click(function () {
+            $('.listPlayer').remove();
+            $('.listDT').remove();
+
+            if (dareX == undefined) {
+                $('#showDT').append("<p class='listDT'>Vous n'avez pas choisi de mode bande de Niouk !</p>");
+            } else {
+                if (nameList.length > 0) {
+                    let y = getRandomInt(nameList.length);
+                    $('#showDT').append("<p class='listPlayer'><strong>" + nameList[y] + "</strong></p>");
+                } else {
+                    $('#showDT').append("<p class='listDT'>Y'a personne pour jouer !</p>");
+                }
+            }
+        });
+        $('#findPlayer').click(function () {
+            $('.listPlayer').css('display', 'none');
+            $('.listPlayer').fadeIn(2500);
         });
 
         /* ------------------------------ Bouton Jouer et up ------------------------------ */
