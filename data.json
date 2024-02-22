@@ -8,9 +8,9 @@
         "Avez-vous déjà eu du cybersexe ou du sexe au téléphone - et avec qui ?",
         "As-tu déjà couché avec un inconnu? PAR EXEMPLE de Tinder ?",
         "Quand as-tu eu des relations sexuelles pour la dernière fois ?",
-        "C’était quand ta première fois ?",
+        "C'était quand ta première fois ?",
         "Avez-vous déjà entendu votre sœur / frère gémir ?",
-        "Avez-vous déjà trompé quelqu’un ?",
+        "Avez-vous déjà trompé quelqu'un ?",
         "Où était ton premier baiser ?",
         "Quelle coiffure avez-vous dans la région génitale ?",
         "Aimez-vous les longs préliminaires ? Si oui, à quoi devrait-il ressembler ?",
@@ -32,7 +32,7 @@
         "Un ptit baiser sensuel à X",
         "Un massage à la personne en face de toi jusqu'à ton prochain tour",
         "Laissez vos yeux se connecter et reconnaître un autre joueur à son odeur.",
-        "Faites une déclaration d’amour à la première personne du sexe opposé à votre gauche (drôle / romantique).",
+        "Faites une déclaration d'amour à la première personne du sexe opposé à votre gauche (drôle / romantique).",
         "Enlèves ton soutien gorge/T-shirt et confies-le au joueur à ta droite jusqu'à ton prochain tour !",
         "Whisper une personne de votre choix.",
         "Prends le premier joueur du sexe opposé à ta gauche de manière aussi séduisante et érotique que possible et embrasse-le du nombril à la ceinture.",
@@ -46,28 +46,22 @@
         "Bois 2 gorgées !!"
     ],
     "fiestaQuestions": [
-        "Nini bois un coup mon pote !",
-        "Quels délits as-tu déjà commis",
+        "Quels délits as-tu déjà commis ?",
         "Ton dernier vomis dû à l'alcool ?",
-        "Dis bonjour Sabine",
         "Combien vaut la personne à ta gauche ?",
         "A quand remonte ta dernière fois sexuellement seul?",
-        "Avoues, t'a fait le radin avant de venir à la soirée!?",
         "Dis à la personne de gauche ce que tu penses d'elle, si tu la connais pas, bonjour la gênance",
-        "T'a prit un sac de couchage ? Si non, bois 3 gorgées.",
         "Quelle est la chose la plus embarrassante que tu n'aies jamais faite ?",
         "Dis-moi un secret de ton enfance.",
         "Avec quelle star aimerais-tu avoir un rendez-vous ?",
-        "Quel joueur a les plus belles mains ?",
-        "Quelque chose d’embarrassant vous est-il arrivé lors d’un rendez-vous ?",
+        "Quelque chose d'embarrassant vous est-il arrivé lors d'un rendez-vous ?",
         "Avez-vous déjà volé quelque chose dans le passé ?",
         "Quelle est ta chanson préférée pour le moment ?",
         "Dans la peau de quel joueur voudrais-tu être pendant 1 semaine et pourquoi ?",
         "Vous êtes bloqué sur une île déserte, qui ici emporteriez-vous avec vous ?",
-        "Qui t’a donné le pire chagrin d’amour ?",
+        "Qui t'a donné le pire chagrin d'amour ?",
         "Préféreriez-vous vous tatouer les fesses ou vous percer la langue ?",
         "Où aimeriez-vous vous téléporter maintenant ?",
-        "Avez-vous déjà bourré votre soutien-gorge ?",
         "Quelle personne dans la salle est la plus susceptible de devenir riche ?",
         "Raconte nous ton dernier rêve",
         "Quelle note sur 10 te donnerais-tu d'un point de vue intellectuel ?",
@@ -80,11 +74,17 @@
         "As-tu déjà été viré d'un endroit ? Lequel ?",
         "Quelle est la chose la plus embarrassante que tes parents ont faites devant toi ?",
         "Quel talent étrange as-tu ?",
-        "Bois 1 gorgées !!",
-        "Bois 2 gorgées !!",
-        "Bois 3 gorgées !!",
-        "Bois 4 gorgées !!",
-        "Bois 5 gorgées !!"
+
+        "Parmi tout ce que tu possèdes, quel est ton objet préféré ?",
+        "Où te vois-tu dans 10 ans ?", 
+        "Si tu étais Président(e), quelle serait ta première action ?",
+        "Tu viens de gagner 100 000€, que fais-tu de cet argent ?",
+        "Si tes amis devaient te décrire en 3 mots, quels mots penses-tu qu'ils choisiraient ?",
+        "Qui est ton celebrity crush ?",
+        "Si tu étais une femme, serais-tu en couple avec ton meilleur ami ?",
+        "As-tu déjà reçu/ envoyé des nudes ?",
+        "Couches-tu le premier soir ?",
+        "Que choisirais-tu entre tromper ou te faire tromper ?"
     ],
     "fiestaGage": [
         "Tu peux boire un coup Bébé Auré !",
@@ -118,7 +118,7 @@
         "Dire le nom de 20 pays en 1 minute / 4 gorgées",
         "Compter jusqu'à 20 en anglais en 15 secondes / 2 gorgées",
         "Trouver 3 mots qui commencent par Y en 15 secondes / 2 gorgées",
-        "Embrasser un livre à l’intérieur et à l’extérieur sans ouvrir le livre/impossible ? => 3 gorgées",
+        "Embrasser un livre à l'intérieur et à l'extérieur sans ouvrir le livre/impossible ? => 3 gorgées",
         "Devenez « l'esclave » de votre voisin de droite pendant 30 minutes",
         "Faire un bisous dans le cou à la personne à ta droite",
         "Bois 2 gorgées !!",
@@ -170,10 +170,5 @@
         "Tu bois un coup avec le/la plus grand",
         "Tu bois un coup avec le/la plus petit",
         "Lance une capsule dans le verre de la personne en face, si tu marques, il boit, sinon, tu bois."
-
-
-
-
-
     ]
 }
